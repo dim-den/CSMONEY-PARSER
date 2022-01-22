@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsMoneyOverstockNotifier", "CsMoneyOverstockNotifier\CsMoneyOverstockNotifier.csproj", "{CDAAC48E-0918-4A48-8F9E-F451D764D5C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BotInventoryParser", "OvertockItemsInfo\BotInventoryParser.csproj", "{8D399499-8700-4E2F-B623-6778E83D233C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverstockTelegramBot", "OverstockTelegramBot\OverstockTelegramBot.csproj", "{56245D2F-8CE1-4219-AB5D-7A0D2DFF909C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsMoneyAPI", "CsMoneyApi\CsMoneyAPI.csproj", "{58A7AA86-C078-420D-A774-876303BDE6AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDAAC48E-0918-4A48-8F9E-F451D764D5C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDAAC48E-0918-4A48-8F9E-F451D764D5C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDAAC48E-0918-4A48-8F9E-F451D764D5C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDAAC48E-0918-4A48-8F9E-F451D764D5C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D399499-8700-4E2F-B623-6778E83D233C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D399499-8700-4E2F-B623-6778E83D233C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D399499-8700-4E2F-B623-6778E83D233C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D399499-8700-4E2F-B623-6778E83D233C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56245D2F-8CE1-4219-AB5D-7A0D2DFF909C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56245D2F-8CE1-4219-AB5D-7A0D2DFF909C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56245D2F-8CE1-4219-AB5D-7A0D2DFF909C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56245D2F-8CE1-4219-AB5D-7A0D2DFF909C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58A7AA86-C078-420D-A774-876303BDE6AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58A7AA86-C078-420D-A774-876303BDE6AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58A7AA86-C078-420D-A774-876303BDE6AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58A7AA86-C078-420D-A774-876303BDE6AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B79C3AEA-0709-4065-A931-D9E5C3C0F91A}
+	EndGlobalSection
+EndGlobal

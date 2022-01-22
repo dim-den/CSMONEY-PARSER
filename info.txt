@@ -1,0 +1,4 @@
+item -  https://inventories.cs.money/5.0/load_bots_inventory/730?hasTradeLock=true&name=Desert%20Eagle%20|%20Printstream%20(Minimal%20Wear)&minPrice=110.71&maxPrice=110.71 (limit=60(max), offset=..)
+/send_offer
+https://cs.money/skin_info?appId=730&id=22060277795&isBot=true&botInventory=true
+https://cs.money/check_skin_status?appId=730&name=StatTrak%E2%84%A2+Five-SeveN+%7C+Fairy+Tale+(Well-Worn)
