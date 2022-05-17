@@ -17,7 +17,8 @@ namespace CsMoneyAPI.Services
         {
             using (HttpClient client = new())
             {
-                HttpResponseMessage response = await client.GetAsync($"https://inventories.cs.money/5.0/load_bots_inventory/730?isMarket=true&hasTradeLock=true&minPrice={minPrice}&offset={page * _offset}");
+                HttpResponseMessage response = await client.GetAsync(
+                    $"https://inventories.cs.money/5.0/load_bots_inventory/730?isMarket=true&hasTradeLock=true&hasTradeLock=false&minPrice={minPrice}&offset={page * _offset}");
 
                 string jsonResponse = await response.Content.ReadAsStringAsync();
 
