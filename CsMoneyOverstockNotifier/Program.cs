@@ -18,7 +18,7 @@ namespace CsMoneyOverstockNotifier
 
             ObservableCollection<string> itemNamesForSearch = new()
             {
-                "Nova | Predator (Factory New)"
+                "★ StatTrak™ Flip Knife | Marble Fade (Factory New)"
             };
 
             while (true)
@@ -46,7 +46,7 @@ namespace CsMoneyOverstockNotifier
                 }
 
                 Console.WriteLine("\n--------------------------------------------------------------\n");
-                Thread.Sleep(1500);                
+                Thread.Sleep(5000);                
             }            
         }
 

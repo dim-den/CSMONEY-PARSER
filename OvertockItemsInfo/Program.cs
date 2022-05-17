@@ -24,7 +24,7 @@ namespace OvertockItemsInfo
             ThreadPool.SetMaxThreads(32, 32);
             Console.OutputEncoding = Encoding.UTF8;
 
-            int pages = 128;
+            int pages = 196;
 
             while (true)
             {
@@ -40,7 +40,7 @@ namespace OvertockItemsInfo
                         if (result.Error == null)
                         {
                             var overpriceItems = from item in result.Items
-                                                 where item.Overprice < -4
+                                                 where item.Overprice < -1.5f
                                                  group item by item.NameId into g
                                                  select new
                                                  {
@@ -70,7 +70,7 @@ namespace OvertockItemsInfo
 
                                 if (overstockStatus.Status == Status.Tradable)
                                 {
-                                    if(profit > 1) SystemSounds.Beep.Play();
+                                    //if(profit > 1) SystemSounds.Beep.Play();
                                     Console.ForegroundColor = ConsoleColor.Green;
                                 }
 

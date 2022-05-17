@@ -7,9 +7,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsMoneyOverstockNotifier", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BotInventoryParser", "OvertockItemsInfo\BotInventoryParser.csproj", "{8D399499-8700-4E2F-B623-6778E83D233C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverstockTelegramBot", "OverstockTelegramBot\OverstockTelegramBot.csproj", "{56245D2F-8CE1-4219-AB5D-7A0D2DFF909C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsMoneyAPI", "CsMoneyApi\CsMoneyAPI.csproj", "{58A7AA86-C078-420D-A774-876303BDE6AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsMoneyAPI", "CsMoneyApi\CsMoneyAPI.csproj", "{58A7AA86-C078-420D-A774-876303BDE6AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuffToCsMoneyParser", "BuffToCsMoneyParser\BuffToCsMoneyParser.csproj", "{E928A147-4672-4840-8177-191C98D01FEE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{58A7AA86-C078-420D-A774-876303BDE6AB} = {58A7AA86-C078-420D-A774-876303BDE6AB}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuffApi", "BuffApi\BuffApi.csproj", "{A8E1ACD5-3CDB-4017-B2F1-B27BF0255BB1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuffToCsMoneyTelegramBot", "BuffToCsMoneyTelegramBot\BuffToCsMoneyTelegramBot.csproj", "{351236ED-0DEB-42D8-A425-EE0794BEA7BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParseCsMoneyItemsNameID", "ParseCsMoneyItemsNameID\ParseCsMoneyItemsNameID.csproj", "{5B5FA4DE-C211-41E2-987B-1DA2F4976802}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +34,26 @@ Global
 		{8D399499-8700-4E2F-B623-6778E83D233C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D399499-8700-4E2F-B623-6778E83D233C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D399499-8700-4E2F-B623-6778E83D233C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{56245D2F-8CE1-4219-AB5D-7A0D2DFF909C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{56245D2F-8CE1-4219-AB5D-7A0D2DFF909C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{56245D2F-8CE1-4219-AB5D-7A0D2DFF909C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{56245D2F-8CE1-4219-AB5D-7A0D2DFF909C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{58A7AA86-C078-420D-A774-876303BDE6AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{58A7AA86-C078-420D-A774-876303BDE6AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58A7AA86-C078-420D-A774-876303BDE6AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58A7AA86-C078-420D-A774-876303BDE6AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E928A147-4672-4840-8177-191C98D01FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E928A147-4672-4840-8177-191C98D01FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E928A147-4672-4840-8177-191C98D01FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E928A147-4672-4840-8177-191C98D01FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8E1ACD5-3CDB-4017-B2F1-B27BF0255BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8E1ACD5-3CDB-4017-B2F1-B27BF0255BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8E1ACD5-3CDB-4017-B2F1-B27BF0255BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8E1ACD5-3CDB-4017-B2F1-B27BF0255BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{351236ED-0DEB-42D8-A425-EE0794BEA7BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{351236ED-0DEB-42D8-A425-EE0794BEA7BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{351236ED-0DEB-42D8-A425-EE0794BEA7BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{351236ED-0DEB-42D8-A425-EE0794BEA7BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B5FA4DE-C211-41E2-987B-1DA2F4976802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B5FA4DE-C211-41E2-987B-1DA2F4976802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B5FA4DE-C211-41E2-987B-1DA2F4976802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B5FA4DE-C211-41E2-987B-1DA2F4976802}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
